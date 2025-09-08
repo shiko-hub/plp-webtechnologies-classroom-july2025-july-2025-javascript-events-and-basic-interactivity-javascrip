@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Welcome to My Interactive Page</h1>
+
+  <!-- Light/Dark Mode Toggle -->
+  <button id="themeToggle">Toggle Theme</button>
+
+  <!-- Counter Game -->
+  <div>
+    <p>Counter: <span id="counter">0</span></p>
+    <button id="incrementBtn">Increase</button>
+  </div>
+
+  <!-- Collapsible FAQ -->
+  <div>
+    <h2>FAQ</h2>
+    <button id="faqToggle">Toggle Answer</button>
+    <p id="faqAnswer" class="hidden">This is the answer to your question.</p>
+  </div>
+
+  <!-- Form Section -->
+  <form id="userForm">
+    <label>Name: <input type="text" id="name" /></label><br />
+    <label>Email: <input type="text" id="email" /></label><br />
+    <label>Password: <input type="password" id="password" /></label><br />
+    <button type="submit">Submit</button>
+    <p id="formFeedback"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
